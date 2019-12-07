@@ -1,9 +1,9 @@
 <?php
 
-$user = "id9111454_ejwhite25";
-$password = "Tr00p356897";
-$database = "id9111454_facesmash";
+$user = //database username;
+$password = //database password;
+$database = //name of database;
 $host = "localhost";
-($GLOBALS["___mysqli_ston"] = mysqli_connect("localhost","id9111454_ejwhite25","Tr00p356897","id9111454_facesmash"));
+($GLOBALS["___mysqli_ston"] = mysqli_connect("localhost",/*database username,password,name of database*/));
 mysqli_select_db($GLOBALS["___mysqli_ston"], $database) or die ("Unable to select database");
 ?>
