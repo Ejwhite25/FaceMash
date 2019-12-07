@@ -4,6 +4,9 @@ As seen in the movie The Social Network.
 
 
 SETUP GUIDE:
+Im assuming you have some general/basic knowlegde of mysql and hosting.
+
+
 1.Setup your database, and using the setupdbtables.sql will load the appropriate tables into your database.
 
 2.Put your DB name, username, and password in the appropriate spots within the mysql.php file.
