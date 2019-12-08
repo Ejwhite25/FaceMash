@@ -32,6 +32,7 @@ td {font-size:11px;}
 </style>
 </head>
 <body>
+ <body oncontextmenu= "return false">
  
 <h1>FaceMash</h1>
 <h3>Were we let in for our looks? No. Will we be judged on them? Yes.</h3>
