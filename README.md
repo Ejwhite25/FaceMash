@@ -1,7 +1,7 @@
 # FaceMash
 As seen in the movie The Social Network.
 
-
+Must have at least PHP 7 installed and running on server/hosting site. 
 
 SETUP GUIDE:
 Im assuming you have some general/basic knowlegde of mysql and hosting.
