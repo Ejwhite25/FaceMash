@@ -1,3 +1,4 @@
+
 <?php
 include('mysql.php');
 include('functions.php');
@@ -38,8 +39,8 @@ td {font-size:11px;}
 <center>
 <table>
  <tr>
-  <td valign="top" class="image"><a href="rate.php?winner=<?=$images[0]->image_id?>&loser=<?=$images[1]->image_id?>"><img src="images/<?=$images[0]->filename?>" /></a></td>
-  <td valign="top" class="image"><a href="rate.php?winner=<?=$images[1]->image_id?>&loser=<?=$images[0]->image_id?>"><img src="images/<?=$images[1]->filename?>" /></a></td>
+  <td valign="top" class="images"><a href="rate.php?winner=<?=$images[0]->image_id?>&loser=<?=$images[1]->image_id?>"><img src="images/<?=$images[0]->filename?>" /></a></td>
+  <td valign="top" class="images"><a href="rate.php?winner=<?=$images[1]->image_id?>&loser=<?=$images[0]->image_id?>"><img src="images/<?=$images[1]->filename?>" /></a></td>
  </tr>
  <tr>
  <td>Won: <?=$images[0]->wins?>, Lost: <?=$images[0]->losses?></td>
@@ -59,31 +60,30 @@ td {font-size:11px;}
 <center>
 <table>
  <tr>
-  <? foreach($top_ratings as $key => $image) : ?>
-  <td valign="top"><img src="images/<?=isset($image->filename)?>" width="70" /></td>
-  <? endforeach ?>
+<?php foreach($top_ratings as $key => $image): ?>
+  <td valign="top"><img src="images/<?=isset($image->filename)?>" width="70" /> </td>
+  <?php endforeach ?>
  </tr>
  <tr>
-  <? foreach($top_ratings as $key => $image) : ?>
+<?php foreach($top_ratings as $key => $image): ?>
   <td valign="top">Score: <?=isset($image->score)?></td>
-  <? endforeach ?>
+  <?php endforeach ?>
  </tr>
  <tr>
-  <? foreach($top_rating as $key => $image) : ?>
+  <?php foreach($top_ratings as $key => $image): ?>
   <td valign="top">Performance: <?=isset($image->performance)?></td>
-  <? endforeach ?>
+    <?php endforeach ?>
  </tr>
  <tr>
-  <? foreach($top_ratings as $key => $image) : ?>
+  <?php foreach($top_ratings as $key => $image): ?> 
   <td valign="top">Won: <?=isset($image->wins)?></td>
-  <? endforeach ?>
- </tr>
+  <?php endforeach ?>
+</tr>
  <tr>
-  <? foreach($top_ratings as $key => $image) : ?>
+  <?php foreach($top_ratings as $key => $image): ?>
   <td valign="top">Lost: <?=isset($image->losses)?></td>
-  <? endforeach ?>
+  <?php endforeach ?>
  </tr>
-  ?>
 </table>
 </center>
 </body>
